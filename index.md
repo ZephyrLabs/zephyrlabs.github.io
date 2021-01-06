@@ -2,10 +2,6 @@
   <source src="/music/lush.mp3" type="audio/mpeg">
 </audio>
 
-<html>
-  <body>
-  <h1>Hello!</h1>  
-    <p>I am ZephyrLabs</p>
-    <p>this is personal blog for all my articles I publish about stuff I am working on, and things I am interested in!</p>
-  </body>
-</html>
+# Hello!  
+## I am ZephyrLabs
+this is personal blog for all my articles I publish about stuff I am working on, and things I am interested in!
