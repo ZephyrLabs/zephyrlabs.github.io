@@ -7,8 +7,5 @@
   <h1>Hello!</h1>  
     <p>I am ZephyrLabs</p>
     <p>this is personal blog for all my articles I publish about stuff I am working on, and things I am interested in!</p>
-    <audio autoplay loop>
-      <source src="/music/lush.mp3" type="audio/mpeg">
-    </audio>
   </body>
 </html>
