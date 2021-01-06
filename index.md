@@ -1,3 +1,7 @@
+<audio autoplay loop>
+  <source src="/music/lush.mp3" type="audio/mpeg">
+</audio>
+
 <html>
   <body>
   <h1>Hello!</h1>  
