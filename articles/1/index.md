@@ -108,7 +108,7 @@ when these things are utilized during compiling, the resultant program is highly
 
 for the **ARM** systems,
 the M1 SoC was the brain child of Apple's silicon technology,
-and had the latest of ARM technology, such as ARMv8.6 etc
+and had the latest of ARM technology, such as ARMv8.6 ISA etc
 
 and has some outstanding peformance in natively compiled programs, as well as programs virtualised in Rosetta 2 translation layer..
 
