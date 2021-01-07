@@ -8,9 +8,13 @@ this is personal blog for all my articles I publish about stuff I am working on,
 
 read my various articles here: [Articles](https://zephyrlabs.github.io/articles/)
 
-my latest articles..: <tbd>
+my latest articles..: 
   
-  
+## prime bench,  the insights shown by this simple benchmark tool.. 
+[read more here](https://zephyrlabs.github.io/articles/1/)
+
+...
+
 want to reach out to me  ?
 
 on [twitter](https://twitter.com/SravanSenthiln1/)
