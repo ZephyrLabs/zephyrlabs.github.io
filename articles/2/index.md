@@ -33,6 +33,7 @@ A processer using the big.LITTLE configuration of cores, with 2x A57 big cores, 
 the system is specifically of the Aarch64 (ARM 64bit & ARMv8) architecture,
 
 1. clockspeed:
+
 The A311D has the highest of the clockspeeds, 
 clocking in at 2.2/ 1.8GHz with the ability to overclock to 2.4/ 2.2Ghz.. 
 
@@ -45,6 +46,7 @@ from this, it seems slightly absurd,
 so it obviously be something from the other two parameters..,
 
 2. architecture:
+
 All the SoCs use the same ARMv8-A architcture, but there is a bit more to it...
 this chart below, shows the differences between the main big cores of the SoC, and the variations of the things like the pipeline depth, and out-of-order execution dispatch width, etc.
 
@@ -52,6 +54,8 @@ this chart below, shows the differences between the main big cores of the SoC, a
 
 as seen from this chart, the instructions per second is in descending order, the A73, the A72, and the A57..
 **"so, how can the A57 cores from the snapdragon, get more done, with less!?"**
+
+3. CPU/memory integrity
 
 this leads to the final conclusion that, the RK3399 and A311D must be highly cache deficient, 
 and this is on some part directly the reason for the deficiency in performance..
