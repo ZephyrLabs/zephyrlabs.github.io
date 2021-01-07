@@ -67,6 +67,8 @@ unfortunately we can't just increase the cache, as it is an onchip, hardware lim
 the only option is to disable a few of the cores to reduce the shared cache usage, 
 this "in theory" should allow for the A73 cores to work, better, faster and optimise the task a bit better..
 
+![comparison](https://raw.githubusercontent.com/ZephyrLabs/zephyrlabs.github.io/master/articles/2/optimization.png)
+
 but which cores should we disable ??
 
 ![power](https://raw.githubusercontent.com/ZephyrLabs/zephyrlabs.github.io/master/articles/2/power.bmp)
