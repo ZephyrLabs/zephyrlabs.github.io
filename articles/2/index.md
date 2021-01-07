@@ -69,6 +69,8 @@ this "in theory" should allow for the A73 cores to work, better, faster and opti
 
 but which cores should we disable ??
 
+![power](https://raw.githubusercontent.com/ZephyrLabs/zephyrlabs.github.io/master/articles/2/power.bmp)
+
 from this power sequence from the A311D's, we see the A53 cores are detrimental to the bootup process, and shouldn't be tampered with 
 for this reason, I chose to disable the cores CPU_4 and CPU_5 which are the last two A73 cores..
 
