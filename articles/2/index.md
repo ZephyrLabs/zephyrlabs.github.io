@@ -1,5 +1,5 @@
 # The curse of the SoCs,
-## the indepth analysis on various ARM SoC's and theire performance dependant on cache..
+## the indepth analysis on various ARM SoC's and their performance dependant on cache..
 
 as contd. from my last article, 
 I wanted to explore more about why the A311D and the RK3399 underperformed in my prime_bench tests, even thought they were on-paper

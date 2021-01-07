@@ -13,6 +13,9 @@ my latest articles..:
 ## prime bench,  the insights shown by this simple benchmark tool.. 
 [read more here](https://zephyrlabs.github.io/articles/1/)
 
+## 2. The curse of the SoCs, the indepth analysis on various ARM SoC's and their performance dependant on cache..
+[read more here](https://zephyrlabs.github.io/articles/2/)
+
 ...
 
 want to reach out to me  ?
