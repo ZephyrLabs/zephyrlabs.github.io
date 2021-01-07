@@ -48,9 +48,10 @@ so it obviously be something from the other two parameters..,
 All the SoCs use the same ARMv8-A architcture, but there is a bit more to it...
 this chart below, shows the differences between the main big cores of the SoC, and the variations of the things like the pipeline depth, and out-of-order execution dispatch width, etc.
 
+![comparison](https://raw.githubusercontent.com/ZephyrLabs/zephyrlabs.github.io/master/articles/2/comparison.png comparison.png)
 
 as seen from this chart, the instructions per second is in descending order, the A73, the A72, and the A57..
-**"how can the A57 cores from the snapdragon, get more done, with less!?"**
+**"so, how can the A57 cores from the snapdragon, get more done, with less!?"**
 
 this leads to the final conclusion that, the RK3399 and A311D must be highly cache deficient, 
 and this is on some part directly the reason for the deficiency in performance..
