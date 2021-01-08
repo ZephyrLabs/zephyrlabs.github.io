@@ -78,4 +78,16 @@ for this reason, I chose to disable the cores CPU_4 and CPU_5 which are the last
 
 I will do some testing here, and will post the results..
 
+## After testing:
 
+to my dismay, disabling cores did NOT affect the single core performance,
+which seems sad, but it doesn't mean its totally unusable..
+
+as said before, prime bench is only a test for compute, and is for testing processers under extreme conditions,
+such an intense situation won't happen when using a normal apps meant for other things..
+
+in real life tests, the A311D is actually the better of the three processers tested, in general performance and overall capability..
+
+the RK3399, and the Snapdragon 820 come in at a tight 2nd place interms of general performance...
+
+I hope to make more improvements in the software, and make more real life equivalent tests, in the coming near future :)
