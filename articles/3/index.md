@@ -41,7 +41,7 @@ ___
 however it isn't much of an issue as after the modes are well memorised, and modes can be changed without having to necessarily look at the tone (muscle memory)
 
 
-__
+___
 
 
 Overall: quite impressed with the performance, waiting to do long term testing to determine the stronger and weaker points of use, but has already exceeded expectations :)
