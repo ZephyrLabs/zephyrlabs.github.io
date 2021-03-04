@@ -1,5 +1,7 @@
 # My personal view of the Khadas Tone 2 pro:
 
+![comparison](https://raw.githubusercontent.com/ZephyrLabs/zephyrlabs.github.io/master/articles/3/tone2pro.png)
+
 ## my personal notes:
 
 ## first impressions:
