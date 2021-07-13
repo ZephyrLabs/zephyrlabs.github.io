@@ -16,6 +16,9 @@ my latest articles..:
 ## The curse of the SoCs, the indepth analysis on various ARM SoC's and their performance dependant on cache..
 [read more here](https://zephyrlabs.github.io/articles/2/)
 
+## Introduction to clustering on single board computers..
+[read more here](https://zephyrlabs.github.io/articles/5/)
+
 ...
 
 want to reach out to me  ?
