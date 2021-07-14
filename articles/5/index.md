@@ -103,7 +103,7 @@ after that I ran `ssh-keygen` and gave enter without any data input to make sure
 
 after that I run `ssh-copy-id <ip-of-a-node>` for each node on each terminal after which I run `ssh <ip-of-a-node>` on each terminal for each node and run updates (`sudo apt update && sudo apt upgrade`) to bring all the nodes up to date
 
-we will first install `mpich` and `python3-mpi4py` from the apt package manager, this will allow us to run commands simulatneously when needed in the future like for example updates and necessary packages etc.
+we will first install `mpich` and `python3-mpi4py` from the apt package manager (`sudo apt install mpich python3-mpi4py`), this will allow us to run commands simulatneously when needed in the future like for example updates and necessary packages etc.
 
 and just like that the initial software setup is complete for the cluster.
 optionally you can set individual hostnames for each of the various nodes.
