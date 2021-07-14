@@ -80,3 +80,33 @@ extensive usage of twist ties and braiding was done to maintain the seamless flo
 
 ### what's next ?:
 in the next part I'll be exploring some of the software I used to setup the cluster this includes things like passwordless SSH functionality, various software for running code with the power of all the clusters etc. 
+
+## Part 2:
+
+### setting up the software:
+
+our first thing on the agenda of software management will be to make sure we have SSH keys enabled for each of the nodes so that we can have passwordless access to each node from the master node.
+
+we first want to figure out which IP address of the various nodes, but since we don't know one node from another we want to change the host name of the cluster on the master node
+
+we first power up the master node (the one on top with the bigger heatsink), and change the host name, this can be done with 
+`sudo nano /etc/hostname` and changing the default name to whatever we prefer
+I named my cluster ***Tuscany*** 
+
+after that we can reboot the vim and power up all the nodes and login to my router to see the attached devices and their various names, its much easier to spot the master node among the other nodes, since I initially know the IP address of my master node from previously sshing into it, I only need to remember the IP address of the other nodes
+
+usually I would need to setup a static IP address but since the image was preconfigured to set its own IP, I didn't meddle with that.
+
+I opened up a corresponding number of SSH terminals to my master node from my main computer equal to the number of other nodes on the network (which in my case was 5 other nodes)
+
+after that I ran `ssh-keygen` and gave enter without any data input to make sure I would have a passwordless entry.
+
+after that I run `ssh-copy-id <ip-of-a-node>` for each node on each terminal after which I run `ssh <ip-of-a-node>` on each terminal for each node and run updates (`sudo apt update && sudo apt upgrade`) to bring all the nodes up to date
+
+we will first install `mpich` and `python3-mpi4py` from the apt package manager, this will allow us to run commands simulatneously when needed in the future like for example updates and necessary packages etc.
+
+and just like that the initial software setup is complete for the cluster.
+optionally you can set individual hostnames for each of the various nodes.
+
+### What's next ?:
+In the next part I'll be running some example code to show the cluster using its computational resource. we can compare these numbers to show how fast it is compared to other various devices like an Individual VIM and another Rasberry pi cluster.
