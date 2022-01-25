@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../assets/fonts/Montserrat-Medium.ttf')  format('truetype');
+  }
+
+body{
+    background-image: linear-gradient(to right, #ffffff10, #2b2b2b20);
+    transition-duration: 1.5s;
+}
+
+h1{
+    padding-left: 120px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: left;
+    font-family: Montserrat-Medium;
+    transition-duration: 1.5s;
+}
+
+h2{
+    padding-left: 120px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: left;
+    font-family: Montserrat-Medium;
+    transition-duration: 1.5s;
+}
+
+h3{
+    padding-left: 120px;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: left;
+    font-family: Montserrat-Medium;
+    transition-duration: 1.5s;
+}
+
+h4{
+    padding-left: 120px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+    font-family: Montserrat-Medium;
+    transition-duration: 1.5s;
+}
+
+h5{
+    padding-left: 120px;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: left;
+    font-family: Montserrat-Medium;
+    transition-duration: 1.5s;
+}
+
+h6{
+    padding-left: 120px;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: left;
+    font-family: Montserrat-Medium;
+    transition-duration: 1.5s;
+}
+
+p{
+    padding-left: 120px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: left;
+    font-family: Montserrat-Medium;
+    line-height:1.4;
+    padding-bottom: 6px;
+    transition-duration: 1.5s;
+}
+
+code{
+    padding-left: 120px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: left;
+    transition-duration: 1.5s;
+}
+
+li{
+    padding-left: 140px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: left;
+    font-family: Montserrat-Medium;
+    transition-duration: 1.5s;
+}
+
+img{
+    border-radius: 2%;
+}
+
+button{
+    float: right;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 20px 20px;
+    padding-right: 140px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Montserrat-Medium;
+
+    transition-duration: 0.4s;
+}
+
+.topnav{
+    background-color:transparent;
+    padding-right: 120px;
+    overflow: hidden;
+}
+
+.topnav a{
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Montserrat-Medium;
+
+    transition-duration: 0.4s;
+}
+

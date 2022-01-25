@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../assets/fonts/Montserrat-Medium.ttf')  format('truetype');
+  }
+
+
+body{
+    background-image: linear-gradient(to bottom, #1172e225, #061b3325);
+    transition-duration: 1.5s;
+}
+
+h1{
+    background-image: linear-gradient(60deg, #0072f5, #031830);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    font-size: 280px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: Montserrat-Medium;
+}
+
+p{
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    font-family: Montserrat-Medium;
+    padding: 20px;
+
+    transition-duration: 1.5s;
+}
+
+footer {
+    color:transparent;
+}
+
+button{
+    float: right;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Montserrat-Medium;
+
+    transition-duration: 1.5s;
+}
+
+button{
+    float: right;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 20px 20px;
+    padding-right: 140px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Montserrat-Medium;
+
+    transition-duration: 1.5s;
+}
+
+.topnav{
+    background-color:transparent;
+    padding-right: 120px;
+    overflow: hidden;
+}
+
+.topnav a{
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Montserrat-Medium;
+
+    transition-duration: 0.4s;
+}

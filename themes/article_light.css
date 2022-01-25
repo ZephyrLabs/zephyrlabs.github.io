@@ -1,0 +1,33 @@
+body{
+    background-color:#f2f2f2;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #020202; 
+}
+
+p, code{
+    color: #020202; 
+}
+
+li{
+    color: #020202;
+}
+
+a{
+    color: #020202;
+}
+
+button {
+    color: #020202;
+}
+
+.topnav a {
+    color: #020202;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #020202;
+    color: #f0f0f0;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <link id="theme" rel="stylesheet" 
+        type="text/css" href="themes/index_dark.css" />
+    <link id="theme" rel="stylesheet" 
+        type="text/css" href="themes/index.css" />
+
+    <script>
+        function theme_toggle() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (document.getElementById("theme_button").innerText == "Dark") {
+                document.getElementById("theme_button").innerText = "Light";
+
+                if (theme.getAttribute('href') == "themes/index_dark.css") {
+                    theme.setAttribute('href', "themes/index_light.css");
+                }
+                
+            }
+            else {
+                document.getElementById("theme_button").innerText = "Dark";
+                theme.setAttribute('href', "themes/index_dark.css");
+            }
+        }
+    </script>
+    <body>
+        <div class="topnav">
+            <a href="articles/index.html">Articles</a>
+            <a href="articles/about/index.html">About</a>            
+        </div>
+        <div>
+            <button id="theme_button" onclick="theme_toggle()">Dark</button>
+        </div>
+        <div>
+            <h1>Hello.</h1>
+            <p> 
+                This is the blog of Sravan a.k.a "Electr0lyte"<br>
+                Embedded electronics enthusiast, developer, and student<br>
+            </p>
+        </div>
+        <footer>
+            <p>
+                ©️ Sravan Senthilnathan 2022<br><br>
+            </p>
+        </footer>
+    </body>
+</html>

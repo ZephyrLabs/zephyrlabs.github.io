@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <link id="theme" rel="stylesheet" 
+    type="text/css" href="../../themes/article_dark.css" />
+    <link id="theme" rel="stylesheet" 
+    type="text/css" href="../../themes/article.css" />
+
+    <script>
+        function theme_toggle() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (document.getElementById("theme_button").innerText == "Dark") {
+                document.getElementById("theme_button").innerText = "Light";
+
+                if (theme.getAttribute('href') == "../../themes/article_dark.css") {
+                    theme.setAttribute('href', "../../themes/article_light.css");
+                }
+                
+            }
+            else {
+                document.getElementById("theme_button").innerText = "Dark";
+                theme.setAttribute('href', "../../themes/article_dark.css");
+            }
+        }
+    </script>
+
+    <body>        
+        <div class="topnav">
+            <a href="../../index.html">Home</a>
+            <a href="../about/index.html">About</a>
+        </div>
+        <div>
+            <button id="theme_button" onclick="theme_toggle()">Dark</button>
+        </div>
+        <div>
+            <h2>Introduction to Clustering..</h2>
+            <p>
+                work in progress !!!
+            </p>
+        </div>
+    </body>
+</html>
