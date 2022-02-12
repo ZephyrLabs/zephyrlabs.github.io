@@ -5,7 +5,6 @@
 
 
 body{
-    background-image: linear-gradient(to bottom, #1172e225, #061b3325);
     transition-duration: 1.5s;
 }
 
@@ -15,7 +14,7 @@ h1{
     background-clip: text;
     color: transparent;
 
-    font-size: 280px;
+    font-size: 260px;
     font-weight: bolder;
     text-align: center;
     font-family: Montserrat-Medium;
@@ -31,7 +30,16 @@ p{
     transition-duration: 1.5s;
 }
 
+a{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: Montserrat-Medium;
+    transition-duration: 1.5s;
+}
+
 footer {
+    text-align: center;
     color:transparent;
 }
 
@@ -54,8 +62,9 @@ button{
     border: none;
     text-align: center;
     padding: 20px 20px;
-    padding-right: 140px;
+    padding-right: 8%;
     text-decoration: none;
+    font-weight: bolder;
     font-size: 14px;
     font-family: Montserrat-Medium;
 
@@ -64,7 +73,7 @@ button{
 
 .topnav{
     background-color:transparent;
-    padding-right: 120px;
+    padding-right: 5%;
     overflow: hidden;
 }
 

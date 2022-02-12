@@ -1,92 +1,100 @@
 @font-face {
     font-family: 'Montserrat-Medium';
     src: url('../assets/fonts/Montserrat-Medium.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Cantarell-Regular';
+    src: url('../assets/fonts/Cantarell-Regular.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'SourceCodePro-Variable';
+    src: url('../assets/fonts/SourceCodePro-Variable.ttf')  format('truetype');
   }
 
 body{
-    background-image: linear-gradient(to right, #ffffff10, #2b2b2b20);
     transition-duration: 1.5s;
 }
 
 h1{
-    padding-left: 120px;
+    padding-left: 5%;
     font-size: 40px;
     font-weight: bolder;
     text-align: left;
-    font-family: Montserrat-Medium;
+    font-family: Cantarell-Regular;
     transition-duration: 1.5s;
 }
 
 h2{
-    padding-left: 120px;
-    font-size: 40px;
+    padding-left: 5%;
+    font-size: 36px;
     font-weight: bolder;
     text-align: left;
-    font-family: Montserrat-Medium;
+    font-family: Cantarell-Regular;
     transition-duration: 1.5s;
 }
 
 h3{
-    padding-left: 120px;
-    font-size: 35px;
+    padding-left: 5%;
+    font-size: 34px;
     font-weight: bolder;
     text-align: left;
-    font-family: Montserrat-Medium;
+    font-family: Cantarell-Regular;
     transition-duration: 1.5s;
 }
 
 h4{
-    padding-left: 120px;
+    padding-left: 5%;
     font-size: 30px;
     font-weight: bolder;
     text-align: left;
-    font-family: Montserrat-Medium;
+    font-family: Cantarell-Regular;
     transition-duration: 1.5s;
 }
 
 h5{
-    padding-left: 120px;
+    padding-left: 5%;
     font-size: 28px;
     font-weight: bolder;
     text-align: left;
-    font-family: Montserrat-Medium;
+    font-family: Cantarell-Regular;
     transition-duration: 1.5s;
 }
 
 h6{
-    padding-left: 120px;
+    padding-left: 5%;
     font-size: 24px;
     font-weight: bolder;
     text-align: left;
-    font-family: Montserrat-Medium;
+    font-family: Cantarell-Regular;
     transition-duration: 1.5s;
 }
 
 p{
-    padding-left: 120px;
+    padding-left: 5%;
     font-size: medium;
     font-weight: bold;
     text-align: left;
-    font-family: Montserrat-Medium;
+    font-family: Cantarell-Regular;
     line-height:1.4;
     padding-bottom: 6px;
     transition-duration: 1.5s;
 }
 
 code{
-    padding-left: 120px;
+    padding-left: 5%;
     font-size: medium;
     font-weight: bold;
     text-align: left;
+    font-family: SourceCodePro-Variable;
     transition-duration: 1.5s;
 }
 
 li{
-    padding-left: 140px;
+    padding-left: 5%;
     font-size: medium;
     font-weight: bold;
     text-align: left;
-    font-family: Montserrat-Medium;
+    font-family: Cantarell-Regular;
     transition-duration: 1.5s;
 }
 
@@ -100,17 +108,18 @@ button{
     border: none;
     text-align: center;
     padding: 20px 20px;
-    padding-right: 140px;
+    padding-right: 8%;
     text-decoration: none;
+    font-weight: bolder;
     font-size: 14px;
     font-family: Montserrat-Medium;
 
-    transition-duration: 0.4s;
+    transition-duration: 1.5s;
 }
 
 .topnav{
     background-color:transparent;
-    padding-right: 120px;
+    padding-right: 5%;
     overflow: hidden;
 }
 
@@ -123,5 +132,13 @@ button{
     font-family: Montserrat-Medium;
 
     transition-duration: 0.4s;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 

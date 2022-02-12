@@ -2,9 +2,11 @@ body {
     background-color:#020202;
 }
 
-p{
+p, a{
     color:#f0f0f0;
 }
+
+
 
 /*
 Themeing for dark mode
