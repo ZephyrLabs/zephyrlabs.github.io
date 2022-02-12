@@ -5,7 +5,6 @@
 
 
 body{
-    background-image: linear-gradient(to bottom, #1172e225, #061b3325);
     transition-duration: 1.5s;
 }
 
@@ -54,7 +53,7 @@ button{
     border: none;
     text-align: center;
     padding: 20px 20px;
-    padding-right: 140px;
+    padding-right: 6%;
     text-decoration: none;
     font-size: 14px;
     font-family: Montserrat-Medium;
@@ -64,7 +63,7 @@ button{
 
 .topnav{
     background-color:transparent;
-    padding-right: 120px;
+    padding-right: 5%;
     overflow: hidden;
 }
 
