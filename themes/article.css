@@ -13,10 +13,10 @@
 
 body{
     transition-duration: 1.5s;
+    padding-left: 5%;
 }
 
 h1{
-    padding-left: 5%;
     font-size: 40px;
     font-weight: bolder;
     text-align: left;
@@ -25,7 +25,6 @@ h1{
 }
 
 h2{
-    padding-left: 5%;
     font-size: 36px;
     font-weight: bolder;
     text-align: left;
@@ -34,7 +33,6 @@ h2{
 }
 
 h3{
-    padding-left: 5%;
     font-size: 34px;
     font-weight: bolder;
     text-align: left;
@@ -43,7 +41,6 @@ h3{
 }
 
 h4{
-    padding-left: 5%;
     font-size: 30px;
     font-weight: bolder;
     text-align: left;
@@ -52,7 +49,6 @@ h4{
 }
 
 h5{
-    padding-left: 5%;
     font-size: 28px;
     font-weight: bolder;
     text-align: left;
@@ -61,7 +57,6 @@ h5{
 }
 
 h6{
-    padding-left: 5%;
     font-size: 24px;
     font-weight: bolder;
     text-align: left;
@@ -70,7 +65,6 @@ h6{
 }
 
 p{
-    padding-left: 5%;
     font-size: medium;
     font-weight: bold;
     text-align: left;
@@ -81,7 +75,6 @@ p{
 }
 
 code{
-    padding-left: 5%;
     font-size: medium;
     font-weight: bold;
     text-align: left;
@@ -90,7 +83,6 @@ code{
 }
 
 li{
-    padding-left: 5%;
     font-size: medium;
     font-weight: bold;
     text-align: left;
@@ -100,6 +92,7 @@ li{
 
 img{
     border-radius: 2%;
+    max-width: 80%;
 }
 
 button{
@@ -130,6 +123,6 @@ button{
     text-decoration: none;
     font-size: 20px;
     font-family: Montserrat-Medium;
-
+    
     transition-duration: 0.4s;
 }
