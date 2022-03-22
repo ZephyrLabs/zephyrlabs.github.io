@@ -2,8 +2,28 @@ body{
     background-color:#202020;
 }
 
-h1, h2, h3, h4, h5, h6{
-    color:#f2f2f2;
+h1{
+    color:#e06c75;
+}
+
+h2{
+    color: #c578dd;
+}
+
+h3{
+    color: #98c379;
+}
+
+h4{
+    color: #61afef;
+}
+
+h5{
+    color: #e5c07b;
+}
+
+h6{
+    color: #abb2bf;
 }
 
 p, code{
