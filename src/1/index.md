@@ -2,7 +2,8 @@
 ## the insights shown by this simple benchmark tool..
 
 ### what is prime bench ?
-prime bench is a simple benchmark tool, part of my set of programs in the crinkle bench repository I made, to see how fast a processer could calculate the number of prime numbers within a given range, 
+prime bench is a simple benchmark tool, part of my set of programs in the crinkle bench repository I made, 
+to see how fast a processer could calculate the number of prime numbers within a given range, 
 specificallly how good one single core from the processer could do it..
 
 this bench has been slightly conterversial to me for the way it has shown results across the table, 
@@ -18,7 +19,8 @@ let's go over more about the benchmark itself:
 > eg. to check if 97 is a prime, it rounds to the nearest half point, which is 49, and checks if 97 is divisible from 0 to 47 onwards...
 > if it finds one number that is divisible, it will immediately stop checking for that number, assumes its a composite number, and move on to the next number..
 
-calculating primes is takes a logarithmic path, where increasing the limit for finding primes leads to testing exponential amount of numbers..
+calculating primes is takes a logarithmic path, 
+where increasing the limit for finding primes leads to testing exponential amount of numbers..
 
 this can be seen with the count of numbers that need to be checked with the increase in the number limit
 
@@ -35,11 +37,13 @@ the approximate number of primes to be checked from 2 to 1000 = 999000/4 = 24975
 last but not least.. for choice of programming language, 
 the program is made in C++ for its speed and minimal overhead,
 unlike with other languages, which may be interpreted, 
-those would take much longer and would be much more innaccurate, as it would be a test to the interpreter, not the program itself..
+those would take much longer and would be much more innaccurate, 
+as it would be a test to the interpreter, not the program itself..
 
 ## time to test drive the program!
 
-to test this program, I used my main work laptop, as well as some single board computers, and with a help of some volunteers, even tested it on the new M1 SoC from apple ! 
+to test this program, I used my main work laptop, as well as some single board computers, 
+and with a help of some volunteers, even tested it on the new M1 SoC from apple ! 
 
 the standard search limit selected was 1 million,
 and the scores may slightly surprise you.. 
@@ -104,7 +108,8 @@ the i3-1005G1 is part of the latest intel core processer series for mobile compu
 and has the shiniest bells and whistles such as AVX-512 support and SSE2 etc.
 i.e SIMD instructions for faster vector computing..
 
-when these things are utilized during compiling, the resultant program is highly optimised for performance and is able to out perform the i5 and ryzen 5 3600 of yester year..
+when these things are utilized during compiling, the resultant program is highly optimised for performance 
+and is able to out perform the i5 and ryzen 5 3600 of yester year..
 
 for the **ARM** systems,
 the M1 SoC was the brain child of Apple's silicon technology,
@@ -112,13 +117,18 @@ and had the latest of ARM technology, such as ARMv8.6 ISA etc
 
 and has some outstanding peformance in natively compiled programs, as well as programs virtualised in Rosetta 2 translation layer..
 
-now, these things didn't really give it any significant gain in performance, rather the indirect things that helped to push to its performance, like the having plentiful of cache for ARM's out-of-order execution model etc.
+now, these things didn't really give it any significant gain in performance, 
+rather the indirect things that helped to push to its performance,
+like the having plentiful of cache for ARM's out-of-order execution model etc.
 
-the Snapdragon 820, being slightly older, still had excellent performance, and still beat every **x86** system tested, by a very long margin..
+the Snapdragon 820, being slightly older, still had excellent performance, 
+and still beat every **x86** system tested, by a very long margin..
 
-another startling thing was that the A311D and RK3399, both having cores, that are by design SUPPOSED to outperform the SD820, actually underperformed!
+another startling thing was that the A311D and RK3399, both having cores, 
+that are by design SUPPOSED to outperform the SD820, actually underperformed!
 
-I will cover this part in my next article, but it seems to show a flaw in the design of these chips, that seem to be very detrimental to the performance shown here..
+I will cover this part in my next article, but it seems to show a flaw in the design of these chips, 
+that seem to be very detrimental to the performance shown here..
 
 but a key eye opener, that was observed was with the ESP32 running arduino,
 ### how could a tiny microcontroller beat out 90% of all these tested systems !?
@@ -132,7 +142,9 @@ the key tweak made was, disabling a flag and compare check in the prime checking
 this seems like cheating a bit, 
 but do be reminded that these are microcontrollers, and do not have dedicated MMU (memory management units) like with the processers tested,
 
-normal processers could move the data without a problem, due to their superiority of having dedicated memory management, hence to level the playing field 
+normal processers could move the data without a problem, due to their
+superiority of having dedicated memory management, hence to level the playing field
+
 the key part that handicapped the chip, was removed, unlocking its speed, and allowing it to crunch numbers faster, 
 
 > after all, the program is made to test the computing limits of the chip, and was not to test the cache integrity, 

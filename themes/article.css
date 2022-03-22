@@ -13,7 +13,11 @@
 
 body{
     transition-duration: 1.5s;
-    padding-left: 5%;
+    text-align: left;
+}
+
+.container{
+    padding-left: 16%;
 }
 
 h1{
@@ -72,6 +76,7 @@ p{
     line-height:1.4;
     padding-bottom: 6px;
     transition-duration: 1.5s;
+    width: 66%;
 }
 
 code{
@@ -112,7 +117,7 @@ button{
 
 .topnav{
     background-color:transparent;
-    padding-right: 5%;
+    padding-right: 3%;
     overflow: hidden;
 }
 

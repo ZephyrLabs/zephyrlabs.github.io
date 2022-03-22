@@ -1,14 +1,105 @@
-<h1>hello.</h1>
-<h2>hello.</h2>
-<h3>hello.</h3>
-<h5>hello.</h5>
-<p><em>this is italicised</em></p>
-<p><strong>this is bold</strong></p>
-<p><strong><em>and this is a combination of both</em></strong></p>
-<p>|this|is|a|table|
-|---|---|---|---|
-|these|are|the|contents|
-|of|the|table|given|</p>
-<p>this is an image:</p>
-<p><img alt="image" src="../articles/about/profile.jpg" /></p>
-<p>and it just sorta works!</p>
+<h1>Getting started with clustering</h1>
+<h2>part 1:</h2>
+<h3>Introduction:</h3>
+<p>Its always has been my wish to build my own SBC cluster, and its finally a reality!</p>
+<p>in this article I'll explain what were my steps to setup and build my own super powered SBC cluster</p>
+<h3>Getting started:</h3>
+<p>to build a cluster we need to select our choice of processing media and various components to interconnect the system.</p>
+<p>I chose the VIM3 as the brains of the operation/s</p>
+<p><img alt="vim3" src="vim3.jpg" title="vim3" /></p>
+<p>I've been using the VIM3 for about 2 years now, and these is nothing as fast that does wonders without breaking a sweat,</p>
+<p>I'll be using the VIM3s in a 4+1 configuration where 1 VIM3 controls the other 4 VIM3s</p>
+<p>the net resources in this cluster (excuding the master node) is:
+<code>24 cores
+12 GB of RAM</code>
+this insane amount of resources will allow us to some intense things</p>
+<p><code>but what is a cluster without the literal fabric that connects it all ?</code></p>
+<h3>The essentials:</h3>
+<p><img alt="interconnect" src="essentials.png" title="essentials" /></p>
+<p><code>The four horsemen of connecting it all</code></p>
+<p>the 4 main things we need for connecting it all together include:</p>
+<ol>
+<li>TPlink 8 port gigabit ethernet switch</li>
+<li>generic 6 port wall charger</li>
+<li>Ethernet cables</li>
+<li>USB-C cables</li>
+</ol>
+<p>the gigabit ethernet switch is the literal bread and butter of the entire operation, allowing high speed communication between all the various nodes connected to it.</p>
+<p>the charger is a branded version of the generic HDS-HDD10T charger, it provides 60w of power distributed among 6 individual USB ports, allowing us to power up the system without any power deficiency</p>
+<p>the cables also play a vital role as they help to connect everything together
+the USB cables were plain braided USB-C to USB-A and the ethernet cables were 1 meter long patch cables which were CAT6 compliant.</p>
+<h3>Building the cluster:</h3>
+<p>except the master node, each node was fitted with a small heatsink to help dissipate heat, and was stacked with pairs of M2 standoffs</p>
+<p><img alt="stack_up" src="stack_up.png" title="stacked up node" /></p>
+<p><code>putting it together piece by piece</code></p>
+<p>all such nodes were given standoffs and stacked up to finally give a tower of SBCs</p>
+<p><img alt="main_cluster" src="main_cluster.png" title="main cluster" /></p>
+<p><code>the tower of power</code></p>
+<p>the nodes are well spaced to allow for good airflow during passive cooling.</p>
+<p>the top most node which is the master node which controls all the other 
+nodes is fitted with a passive heatsink from khadas, and acts as the 
+endcap for the standoff heads and also gives the extra necessary cooling 
+for the master node which will have to manage all other devices</p>
+<h3>setting up some initial software...</h3>
+<p>for the cluster we need to setup all the nodes to run linux, the simple 
+approach I took to do this seamlessly is using <a href="https://docs.khadas.com/vim3/Krescue.html">Krescue</a></p>
+<p>one node at a time can be fitted with a thumbdrive containing krescue and 
+the necessary firmware file and connected to the computer to open up the 
+krescue web console and flash the firmware</p>
+<p><img alt="krescue_web" src="krescue_web.png" title="krescue web client" /></p>
+<p><code>look ma, krescue is on my browser!</code></p>
+<p>my choice of firmware was the stock Arch image install via krescue scripts, 
+running the mainline kernel, this would mean I'd be getting the up to date 
+software and latest optimizations available, kudos to @Artem from khadas 
+for creating these amazing scripts!</p>
+<p>Arch linux is very lightweight, fast to boot, and is very vanilla (apart 
+from being a bit difficult to setup if you are an linux beginner)</p>
+<h3>cable management:</h3>
+<p>much work was done to organize the extra lengthy cables I used here, if 
+you were to attempt this you could get away with some smaller patch cables 
+for less of a mess.</p>
+<p>extensive usage of twist ties and braiding was done to maintain the 
+seamless flow of the cables</p>
+<h3>what's next ?:</h3>
+<p>in the next part I'll be exploring some of the software I used to setup 
+the cluster this includes things like passwordless SSH functionality, 
+various software for running code with the power of all the clusters etc. </p>
+<h2>Part 2:</h2>
+<h3>setting up the software:</h3>
+<p>our first thing on the agenda of software management will be to make sure 
+we have SSH keys enabled for each of the nodes so that we can have 
+passwordless access to each node from the master node.</p>
+<p>we first want to figure out which IP address of the various nodes, but 
+since we don't know one node from another we want to change the host name 
+of the cluster on the master node</p>
+<p>we first power up the master node (the one on top with the bigger heatsink , 
+and change the host name, this can be done with 
+<code>sudo nano /etc/hostname</code> and changing the default name to whatever we 
+prefer, I named my cluster <strong>orchid</strong> </p>
+<p>after that we can reboot the vim and power up all the nodes and login to
+my router to see the attached devices and their various names, its much 
+easier to spot the master node among the other nodes, since I initially 
+know the IP address of my master node from previously sshing into it, I 
+only need to remember the IP address of the other nodes</p>
+<p>usually I would need to setup a static IP address but since the image was
+preconfigured to set its own IP, I didn't meddle with that.</p>
+<p>I opened up a corresponding number of SSH terminals to my master node from 
+my main computer equal to the number of other nodes on the network (which 
+in my case was 5 other nodes)</p>
+<p>after that I ran <code>ssh-keygen</code> and gave enter without any data input to
+make sure I would have a passwordless entry.</p>
+<p>after that I run <code>ssh-copy-id &lt;ip-of-a-node&gt;</code> for each node on each 
+terminal after which I run <code>ssh &lt;ip-of-a-node&gt;</code> on each terminal for each 
+node and run updates (<code>sudo pacman -Syu</code>) to bring all 
+the nodes up to date</p>
+<p>we will first install <code>mpich</code> and <code>python3-mpi4py</code> from the pacman package 
+manager (<code>sudo pacman -S mpich python3-mpi4py</code>), this will allow us to 
+run commands simulatneously when needed in the future like for example 
+updates and necessary packages etc.</p>
+<p>and just like that the initial software setup is complete for the cluster.
+optionally you can set individual hostnames for each of the various nodes.</p>
+<h3>What's next ?:</h3>
+<p>In the next part I'll be running some example code to show the cluster 
+using its computational resource. we can compare these numbers to show how 
+fast it is compared to other various devices like an Individual VIM and 
+another Rasberry pi cluster.</p>

@@ -3,12 +3,10 @@
 
 ### Introduction:
 Its always has been my wish to build my own SBC cluster, and its finally a reality!
-
 in this article I'll explain what were my steps to setup and build my own super powered SBC cluster
 
 ### Getting started:
 to build a cluster we need to select our choice of processing media and various components to interconnect the system.
-
 I chose the VIM3 as the brains of the operation/s
 
 ![vim3](vim3.jpg "vim3")
@@ -28,6 +26,7 @@ this insane amount of resources will allow us to some intense things
 
 ### The essentials:
 ![interconnect](essentials.png "essentials")
+
 `The four horsemen of connecting it all`
 
 the 4 main things we need for connecting it all together include:
@@ -37,9 +36,12 @@ the 4 main things we need for connecting it all together include:
 3. Ethernet cables
 4. USB-C cables
 
-the gigabit ethernet switch is the literal bread and butter of the entire operation, allowing high speed communication between all the various nodes connected to it.
+the gigabit ethernet switch is the literal bread and butter of the entire operation, 
+allowing high speed communication between all the various nodes connected to it.
 
-the charger is a branded version of the generic HDS-HDD10T charger, it provides 60w of power distributed among 6 individual USB ports, allowing us to power up the system without any power deficiency
+the charger is a branded version of the generic HDS-HDD10T charger, 
+it provides 60w of power distributed among 6 individual USB ports, 
+allowing us to power up the system without any power deficiency
 
 the cables also play a vital role as they help to connect everything together
 the USB cables were plain braided USB-C to USB-A and the ethernet cables were 1 meter long patch cables which were CAT6 compliant.
@@ -48,11 +50,13 @@ the USB cables were plain braided USB-C to USB-A and the ethernet cables were 1 
 except the master node, each node was fitted with a small heatsink to help dissipate heat, and was stacked with pairs of M2 standoffs
 
 ![stack_up](stack_up.png "stacked up node")
+
 `putting it together piece by piece`
 
 all such nodes were given standoffs and stacked up to finally give a tower of SBCs
 
 ![main_cluster](main_cluster.png "main cluster")
+
 `the tower of power`
 
 the nodes are well spaced to allow for good airflow during passive cooling.
@@ -71,6 +75,7 @@ the necessary firmware file and connected to the computer to open up the
 krescue web console and flash the firmware
 
 ![krescue_web](krescue_web.png "krescue web client")
+
 `look ma, krescue is on my browser!`
 
 my choice of firmware was the stock Arch image install via krescue scripts, 
