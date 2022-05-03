@@ -1,22 +1,29 @@
 <h1>Getting started with clustering</h1>
 <h2>part 1:</h2>
 <h3>Introduction:</h3>
-<p>Its always has been my wish to build my own SBC cluster, and its finally a reality!</p>
-<p>in this article I'll explain what were my steps to setup and build my own super powered SBC cluster</p>
+<p>Its always has been my wish to build my own SBC cluster, and its finally a reality!
+in this article I'll explain what were my steps to setup and build my own super powered SBC cluster</p>
 <h3>Getting started:</h3>
-<p>to build a cluster we need to select our choice of processing media and various components to interconnect the system.</p>
-<p>I chose the VIM3 as the brains of the operation/s</p>
+<p>to build a cluster we need to select our choice of processing media and 
+various components to interconnect the system.
+I chose the VIM3 as the brains of the operation/s</p>
 <p><img alt="vim3" src="vim3.jpg" title="vim3" /></p>
-<p>I've been using the VIM3 for about 2 years now, and these is nothing as fast that does wonders without breaking a sweat,</p>
-<p>I'll be using the VIM3s in a 4+1 configuration where 1 VIM3 controls the other 4 VIM3s</p>
-<p>the net resources in this cluster (excuding the master node) is:
-<code>24 cores
-12 GB of RAM</code>
-this insane amount of resources will allow us to some intense things</p>
-<p><code>but what is a cluster without the literal fabric that connects it all ?</code></p>
+<p>I've been using the VIM3 for about 2 years now, and it has been running quite reliably,
+I'll be using the VIM3s in a 4+1 configuration where 1 VIM3 controls the other 4 VIM3s
+the net resources in this cluster (excuding the master node) is:</p>
+<ul>
+<li>24 cores</li>
+<li>12 GB of RAM</li>
+</ul>
+<p>this will allow us to do a wide variety of distributed computing tasks</p>
+<blockquote>
+<p>but what is a cluster without the literal fabric that connects it all ?</p>
+</blockquote>
 <h3>The essentials:</h3>
 <p><img alt="interconnect" src="essentials.png" title="essentials" /></p>
-<p><code>The four horsemen of connecting it all</code></p>
+<blockquote>
+<p>The four horsemen of connecting it all</p>
+</blockquote>
 <p>the 4 main things we need for connecting it all together include:</p>
 <ol>
 <li>TPlink 8 port gigabit ethernet switch</li>
@@ -24,17 +31,26 @@ this insane amount of resources will allow us to some intense things</p>
 <li>Ethernet cables</li>
 <li>USB-C cables</li>
 </ol>
-<p>the gigabit ethernet switch is the literal bread and butter of the entire operation, allowing high speed communication between all the various nodes connected to it.</p>
-<p>the charger is a branded version of the generic HDS-HDD10T charger, it provides 60w of power distributed among 6 individual USB ports, allowing us to power up the system without any power deficiency</p>
+<p>the gigabit ethernet switch is the literal bread and butter of the entire operation, 
+allowing high speed communication between all the various nodes connected to it.</p>
+<p>the charger is a branded version of the generic HDS-HDD10T charger, 
+it provides 60w of power distributed among 6 individual USB ports, 
+allowing us to power up the system without any power deficiency</p>
 <p>the cables also play a vital role as they help to connect everything together
-the USB cables were plain braided USB-C to USB-A and the ethernet cables were 1 meter long patch cables which were CAT6 compliant.</p>
+the USB cables were plain braided USB-C to USB-A and
+the ethernet cables were 1 meter long patch cables which were CAT6 compliant.</p>
 <h3>Building the cluster:</h3>
-<p>except the master node, each node was fitted with a small heatsink to help dissipate heat, and was stacked with pairs of M2 standoffs</p>
+<p>except the master node, each node was fitted with a small heatsink to help dissipate heat, 
+and was stacked with pairs of M2 standoffs</p>
 <p><img alt="stack_up" src="stack_up.png" title="stacked up node" /></p>
-<p><code>putting it together piece by piece</code></p>
+<blockquote>
+<p>putting it together piece by piece</p>
+</blockquote>
 <p>all such nodes were given standoffs and stacked up to finally give a tower of SBCs</p>
 <p><img alt="main_cluster" src="main_cluster.png" title="main cluster" /></p>
-<p><code>the tower of power</code></p>
+<blockquote>
+<p>the tower of power</p>
+</blockquote>
 <p>the nodes are well spaced to allow for good airflow during passive cooling.</p>
 <p>the top most node which is the master node which controls all the other 
 nodes is fitted with a passive heatsink from khadas, and acts as the 
@@ -47,7 +63,9 @@ approach I took to do this seamlessly is using <a href="https://docs.khadas.com/
 the necessary firmware file and connected to the computer to open up the 
 krescue web console and flash the firmware</p>
 <p><img alt="krescue_web" src="krescue_web.png" title="krescue web client" /></p>
-<p><code>look ma, krescue is on my browser!</code></p>
+<blockquote>
+<p>look ma, krescue is on my browser!</p>
+</blockquote>
 <p>my choice of firmware was the stock Arch image install via krescue scripts, 
 running the mainline kernel, this would mean I'd be getting the up to date 
 software and latest optimizations available, kudos to @Artem from khadas 
