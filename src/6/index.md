@@ -1,7 +1,7 @@
 # Surveillant
 **A highly customizeable dashboard on your desktop**
 
-![surveillant](surveillant.png "surveillant")
+![surveillant](surveillant.webp "surveillant")
 
 The surveillant project is an ambitious idea to make an 
 all in one system mangement utility, that is compact enough
@@ -19,19 +19,19 @@ for my usage I built it with a khadas's VIM3 and their TS050 touchscreen
 and the enclosure which is a customized version of a handheld case
 which is 3D printed 
 
-![Rendered view](rendered.png "rendered")
+![Rendered view](rendered.webp "rendered")
 
 > Rendered version of the 3D printed case
 
-![Assembly pt 1](asm1.png "asm1")
+![Assembly pt 1](asm1.webp "asm1")
 
 > Disassembled construction
 
-![Assembly pt 2](asm2.png "asm2")
+![Assembly pt 2](asm2.webp "asm2")
 
-![Assembly pt 3](asm3.png "asm3")
+![Assembly pt 3](asm3.webp "asm3")
 
-![Assembly pt 4](asm4.png "asm4")
+![Assembly pt 4](asm4.webp "asm4")
 
 > completely assembled construction
 
@@ -51,7 +51,7 @@ was quite bulky
 this newer system has minimal system load and can be considered to have
 negligible resource usage during run time.
 
-![node view](nodepanel.png "node view")
+![node view](nodepanel.webp "node view")
 
 > 0% cpu usage during idle and still fetching data, efficent!
 
