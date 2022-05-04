@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <link id="theme" rel="stylesheet" 
+    type="text/css" href="../../themes/article_dark.css" />
+    <link id="theme" rel="stylesheet" 
+    type="text/css" href="../../themes/article.css" />
+    <link id="theme" rel="stylesheet" 
+    type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function theme_toggle() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (document.getElementById("theme_button").innerText == "Dark") {
+                document.getElementById("theme_button").innerText = "Light";
+
+                if (theme.getAttribute('href') == "../../themes/article_dark.css") {
+                    theme.setAttribute('href', "../../themes/article_light.css");
+                }
+                
+            }
+            else {
+                document.getElementById("theme_button").innerText = "Dark";
+                theme.setAttribute('href', "../../themes/article_dark.css");
+            }
+        }
+    </script>
+
+    <body>        
+        <div class="topnav">
+            <a href="../../index.html">Home</a>
+            <a href="../about/index.html">About</a>
+        </div>
+        <div>
+            <button id="theme_button" onclick="theme_toggle()">Dark</button>
+        </div>
+        <div class="container">
+            <h1>Surveillant</h1>
+            <p><strong>A highly customizeable dashboard on your desktop</strong></p>
+            <p><img alt="surveillant" src="surveillant.png" title="surveillant" /></p>
+            <p>The surveillant project is an ambitious idea to make an 
+            all in one system mangement utility, that is compact enough
+            to fit on your desktop.</p>
+            <p>the principle of the project to have a dedicated monitoring
+            that can operate independant of your actual system, as well 
+            as act like a middleman when you need to interact with it as well</p>
+            <p>the project has 2 parts to it, mainly the physical 
+            dashboard as seen above, as well as the software 
+            which can be customized to run on other modified platforms</p>
+            <p>for my usage I built it with a khadas's VIM3 and their TS050 touchscreen
+            and the enclosure which is a customized version of a handheld case
+            which is 3D printed </p>
+            <p><img alt="Rendered view" src="rendered.png" title="rendered" /></p>
+            <blockquote>
+            <p>Rendered version of the 3D printed case</p>
+            </blockquote>
+            <p><img alt="Assembly pt 1" src="asm1.png" title="asm1" /></p>
+            <blockquote>
+            <p>Disassembled construction</p>
+            </blockquote>
+            <p><img alt="Assembly pt 2" src="asm2.png" title="asm2" /></p>
+            <p><img alt="Assembly pt 3" src="asm3.png" title="asm3" /></p>
+            <p><img alt="Assembly pt 4" src="asm4.png" title="asm4" /></p>
+            <blockquote>
+            <p>completely assembled construction</p>
+            </blockquote>
+            <p>now the software framework for this project is based on the 
+            principle of sending the data collected over the local network
+            for displaying on the dashboard</p>
+            <p><img alt="model 1" src="model1.png" title="system model" /></p>
+            <blockquote>
+            <p>multi client and host system</p>
+            </blockquote>
+            <p>the system of having a dedicated server and client is more efficient
+            that previous methods of data collection, which involved more
+            heavy services like mpich to collect and send the data which
+            was quite bulky</p>
+            <p>this newer system has minimal system load and can be considered to have
+            negligible resource usage during run time.</p>
+            <p><img alt="node view" src="nodepanel.png" title="node view" /></p>
+            <blockquote>
+            <p>0% cpu usage during idle and still fetching data, efficent!</p>
+            </blockquote>
+            <p>This client can be ported to other platforms with ease, I've documented
+            the requirements for building a custom client in the github documentation
+            so if you require a modified version of the client server, its possible
+            to create one from scratch!</p>
+            <p>the project is completely open source and available on github to download
+            and try out!</p>
+            <p>check it out at <a href="https://github.com/ZephyrLabs/surveillant">zephyrlabs/surveillant</a></p>
+            <h2>
+                <a href="https://twitter.com/SravanSenthiln1/"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="https://github.com/ZephyrLabs/"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </h2>
+        </div>
+    </body>
+</html>
