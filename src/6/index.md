@@ -64,3 +64,8 @@ the project is completely open source and available on github to download
 and try out!
 
 check it out at [zephyrlabs/surveillant](https://github.com/ZephyrLabs/surveillant)
+
+![operational view](combo.webp "in operation")
+
+obtain a copy of the SysML here:
+[System Model of Surveillant](working.pdf)
