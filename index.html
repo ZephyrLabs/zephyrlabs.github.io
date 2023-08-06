@@ -1,49 +1,30 @@
 <!DOCTYPE html>
 <html>
     <link id="theme" rel="stylesheet" 
-        type="text/css" href="themes/index_dark.css" />
-    <link id="theme" rel="stylesheet" 
         type="text/css" href="themes/index.css" />
     <link id="theme" rel="stylesheet" 
     type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script>
-        function theme_toggle() {
-            var theme = document.getElementsByTagName('link')[0];
-            if (document.getElementById("theme_button").innerText == "Dark") {
-                document.getElementById("theme_button").innerText = "Light";
-
-                if (theme.getAttribute('href') == "themes/index_dark.css") {
-                    theme.setAttribute('href', "themes/index_light.css");
-                }
-                
-            }
-            else {
-                document.getElementById("theme_button").innerText = "Dark";
-                theme.setAttribute('href', "themes/index_dark.css");
-            }
-        }
-    </script>
     <body>
         <div class="topnav">
-            <a href="articles/index.html">Articles</a>
-            <a href="articles/about/index.html">About</a>            
-        </div>
-        <div>
-            <button id="theme_button" onclick="theme_toggle()">Dark</button>
+            <a href="about/index.html"><i class="fa fa-address-card" aria-hidden="true"></i></a>            
         </div>
         <div class="container">
             <h1>Hello.</h1>
-            <p> 
-                This is the blog of Sravan a.k.a "Electr0lyte"<br>
-                Embedded electronics enthusiast, developer, and student
-            </p>
-        
+            <h4> 
+                Sravan "Electr0lyte" Senthilnathan<br>    
+                Embedded Electronics Enthusiast
+            </h4>
             <footer>
-                <p>
-                    ©️ Sravan Senthilnathan 2022<br>
+            <h2>
                     <a href="https://twitter.com/SravanSenthiln1/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     <a href="https://github.com/ZephyrLabs/"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/sravan-senthilnathan-8a0381227/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </h2>
+            </footer>
+            <footer>
+                <p class="bottom">
+                    ©️ Sravan Senthilnathan 2023
                 </p>
             </footer>
         </div>
